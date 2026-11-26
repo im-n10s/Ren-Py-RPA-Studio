@@ -473,6 +473,83 @@
       </div>
     </section>
 
+    <!-- Interactive FAQ Accordion Section -->
+    <section class="faq-section" aria-labelledby="faq-heading">
+      <div class="faq-header">
+        <h2 id="faq-heading" class="faq-title" data-i18n="faqTitle">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list" id="faq-accordion">
+        <!-- Question 1 -->
+        <div class="faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-1" id="faq-trigger-1">
+            <span class="faq-question" data-i18n="faqQ1">Are my files and data safe?</span>
+            <span class="faq-chevron" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div id="faq-panel-1" class="faq-panel" role="region" aria-labelledby="faq-trigger-1">
+            <div class="faq-panel-inner">
+              <p class="faq-answer" data-i18n="faqA1">Yes, 100%. All unpacking and packing operations happen locally inside your browser's memory. Your files are never uploaded to any external server.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-2" id="faq-trigger-2">
+            <span class="faq-question" data-i18n="faqQ2">Which RPA archive versions are supported?</span>
+            <span class="faq-chevron" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div id="faq-panel-2" class="faq-panel" role="region" aria-labelledby="faq-trigger-2">
+            <div class="faq-panel-inner">
+              <p class="faq-answer" data-i18n="faqA2">You can unpack both RPA-3.0 and RPA-2.0 archives (supporting Python Pickle protocols 0 through 5), and pack your files into standard RPA-3.0 archives fully compatible with Ren'Py.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-3" id="faq-trigger-3">
+            <span class="faq-question" data-i18n="faqQ3">Do I need to install Python or external tools?</span>
+            <span class="faq-chevron" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div id="faq-panel-3" class="faq-panel" role="region" aria-labelledby="faq-trigger-3">
+            <div class="faq-panel-inner">
+              <p class="faq-answer" data-i18n="faqA3">No. Ren'Py RPA Studio runs completely in any modern web browser on desktop or mobile—no Python installation, command-line tools, or downloads required.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-4" id="faq-trigger-4">
+            <span class="faq-question" data-i18n="faqQ4">Is there a file size limit?</span>
+            <span class="faq-chevron" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div id="faq-panel-4" class="faq-panel" role="region" aria-labelledby="faq-trigger-4">
+            <div class="faq-panel-inner">
+              <p class="faq-answer" data-i18n="faqA4">There are no artificial limits imposed by the site. Because processing runs locally in your browser, maximum size depends only on your device's available RAM (works smoothly for archives up to several hundred megabytes).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- Clean Single-Row Footer -->

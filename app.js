@@ -993,8 +993,8 @@
         auraY = mouseY;
       }
 
-      // Dynamic Liquid Glass Spotlight on cards, dropzones, and modal
-      const targetCard = e.target.closest('.card, .dropzone, .modal-dialog');
+      // Dynamic Liquid Glass Spotlight on cards, dropzones, modal, and FAQ items
+      const targetCard = e.target.closest('.card, .dropzone, .modal-dialog, .faq-item');
       if (targetCard) {
         const rect = targetCard.getBoundingClientRect();
         targetCard.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`);
@@ -1022,6 +1022,36 @@
     }
   }
 
+  // =========================================================================
+  // INTERACTIVE FAQ ACCORDION
+  // =========================================================================
+  function initFaqAccordion() {
+    const accordion = document.getElementById('faq-accordion');
+    if (!accordion) return;
+
+    const triggers = accordion.querySelectorAll('.faq-trigger');
+    triggers.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const currentItem = btn.closest('.faq-item');
+        if (!currentItem) return;
+        const wasOpen = currentItem.classList.contains('open');
+
+        // Collapse all items first
+        accordion.querySelectorAll('.faq-item').forEach((item) => {
+          item.classList.remove('open');
+          const trigger = item.querySelector('.faq-trigger');
+          if (trigger) trigger.setAttribute('aria-expanded', 'false');
+        });
+
+        // Open clicked item if it wasn't already open
+        if (!wasOpen) {
+          currentItem.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  }
+
   // --- App Startup ---
   function init() {
     applyTheme(currentTheme);
@@ -1030,6 +1060,7 @@
     updatePackXorKeyDisplay();
     initEventListeners();
     initInteractiveMouse();
+    initFaqAccordion();
   }
 
   document.addEventListener('DOMContentLoaded', init);

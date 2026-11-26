@@ -117,6 +117,17 @@
       socialTwitter: "X (Twitter)",
       socialGithub: "GitHub",
 
+      // FAQ
+      faqTitle: "Frequently Asked Questions",
+      faqQ1: "Are my files and data safe?",
+      faqA1: "Yes, 100%. All unpacking and packing operations happen locally inside your browser's memory. Your files are never uploaded to any external server.",
+      faqQ2: "Which RPA archive versions are supported?",
+      faqA2: "You can unpack both RPA-3.0 and RPA-2.0 archives (supporting Python Pickle protocols 0 through 5), and pack your files into standard RPA-3.0 archives fully compatible with Ren'Py.",
+      faqQ3: "Do I need to install Python or external tools?",
+      faqA3: "No. Ren'Py RPA Studio runs completely in any modern web browser on desktop or mobile—no Python installation, command-line tools, or downloads required.",
+      faqQ4: "Is there a file size limit?",
+      faqA4: "There are no artificial limits imposed by the site. Because processing runs locally in your browser, maximum size depends only on your device's available RAM (works smoothly for archives up to several hundred megabytes).",
+
       // Errors & Toasts
       toastSuccessCopied: "Wallet address copied to clipboard!",
       toastCopyFailed: "Failed to copy address automatically.",
@@ -245,6 +256,17 @@
       creditsAuthor: "Made with ❤️ by n10s_exe",
       socialTwitter: "إكس (تويتر)",
       socialGithub: "غيت هاب",
+
+      // FAQ
+      faqTitle: "الأسئلة الشائعة",
+      faqQ1: "هل ملفاتي وبياناتي في أمان؟",
+      faqA1: "نعم بنسبة 100%. تتم جميع عمليات استخراج وضغط الملفات محلياً داخل ذاكرة متصفحك فقط، ولا يتم رفع أي ملف أو بيانات إلى أي سيرفر خارجي.",
+      faqQ2: "ما هي إصدارات ملفات RPA المدعومة؟",
+      faqA2: "يدعم الموقع فك ضغط إصداري RPA-3.0 و RPA-2.0 (مع دعم بروتوكولات Python Pickle من 0 إلى 5)، بالإضافة إلى ضغط ملفاتك في أرشيف RPA-3.0 قياسي متوافق تماماً مع محرك Ren'Py.",
+      faqQ3: "هل أحتاج لتثبيت Python أو أي برامج خارجية؟",
+      faqA3: "لا، يعمل الموقع مباشرة من أي متصفح حديث على الحاسوب أو الهاتف دون الحاجة لتثبيت Python أو استخدام أدوات سطر الأوامر أو تحميل أي برامج.",
+      faqQ4: "هل هناك حد أقصى لحجم الملفات؟",
+      faqA4: "لا توجد قيود مفروضة من الموقع. وبما أن المعالجة تتم محلياً داخل المتصفح، فإن الحد الأقصى يعتمد فقط على الذاكرة المتاحة في جهازك (يعمل بسلاسة تامة مع الملفات الصغيرة والمتوسطة حتى عدة مئات من الميجابايت).",
 
       // Errors & Toasts
       toastSuccessCopied: "تم نسخ عنوان المحفظة بنجاح!",
