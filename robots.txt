@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://im-n10s.github.io/Ren-Py-RPA-Studio/sitemap.xml
